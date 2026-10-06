@@ -1,0 +1,40 @@
+series,target_year,training_end,training_points,actual,prophet,prophet_lower_80,prophet_upper_80,baseline_last_value,prophet_abs_error,baseline_abs_error,within_nominal_80
+Total,2022,2021,16,75.3,75.819,74.082,77.637,77.0,0.519,1.7,True
+Total,2023,2022,17,74.1,75.37,73.623,77.024,75.3,1.27,1.2,True
+Total,2024,2023,18,72.3,74.708,72.977,76.27,74.1,2.408,1.8,False
+C1: Security Apparatus,2021,2020,15,6.6,8.036,6.962,9.123,6.907,1.436,0.307,False
+C1: Security Apparatus,2022,2021,16,6.3,7.794,6.629,8.868,6.6,1.494,0.3,False
+C1: Security Apparatus,2023,2022,17,6.0,7.541,6.42,8.713,6.3,1.541,0.3,False
+C2: Factionalized Elites,2021,2020,15,7.3,7.489,7.315,7.657,7.3,0.189,0.0,False
+C2: Factionalized Elites,2022,2021,16,7.3,7.436,7.276,7.606,7.3,0.136,0.0,True
+C2: Factionalized Elites,2023,2022,17,7.3,7.401,7.243,7.556,7.3,0.101,0.0,True
+C3: Group Grievance,2021,2020,15,8.2,8.56,8.259,8.843,8.5,0.36,0.3,False
+C3: Group Grievance,2022,2021,16,8.1,8.472,8.2,8.772,8.2,0.372,0.1,False
+C3: Group Grievance,2023,2022,17,8.1,8.327,8.047,8.581,8.1,0.227,0.0,True
+E1: Economy,2021,2020,15,7.0,5.56,5.213,5.92,5.6,1.44,1.4,False
+E1: Economy,2022,2021,16,6.5,5.964,5.423,6.478,7.0,0.536,0.5,False
+E1: Economy,2023,2022,17,6.2,6.164,5.646,6.693,6.5,0.036,0.3,True
+E2: Economic Inequality,2021,2020,15,6.2,5.799,5.729,5.864,6.1,0.401,0.1,False
+E2: Economic Inequality,2022,2021,16,6.1,5.73,5.591,5.862,6.2,0.37,0.1,False
+E2: Economic Inequality,2023,2022,17,5.8,5.615,5.381,5.831,6.1,0.185,0.3,True
+E3: Human Flight and Brain Drain,2021,2020,15,5.5,5.49,4.91,6.035,5.8,0.01,0.3,True
+E3: Human Flight and Brain Drain,2022,2021,16,5.2,5.405,4.841,5.927,5.5,0.205,0.3,True
+E3: Human Flight and Brain Drain,2023,2022,17,4.9,5.271,4.747,5.809,5.2,0.371,0.3,True
+P1: State Legitimacy,2021,2020,15,4.3,4.442,3.893,5.004,4.0,0.142,0.3,True
+P1: State Legitimacy,2022,2021,16,4.4,4.338,3.787,4.905,4.3,0.062,0.1,True
+P1: State Legitimacy,2023,2022,17,4.5,4.281,3.743,4.817,4.4,0.219,0.1,True
+P2: Public Services,2021,2020,15,7.5,7.135,6.756,7.558,6.5,0.365,1.0,True
+P2: Public Services,2022,2021,16,7.6,7.239,6.844,7.604,7.5,0.361,0.1,True
+P2: Public Services,2023,2022,17,7.3,7.349,6.975,7.762,7.6,0.049,0.3,True
+P3: Human Rights,2021,2020,15,7.7,6.389,5.859,6.948,7.6,1.311,0.1,False
+P3: Human Rights,2022,2021,16,7.4,6.772,6.157,7.374,7.7,0.628,0.3,False
+P3: Human Rights,2023,2022,17,7.5,7.006,6.303,7.634,7.4,0.494,0.1,True
+S1: Demographic Pressures,2021,2020,15,8.1,7.813,7.535,8.116,7.8,0.287,0.3,True
+S1: Demographic Pressures,2022,2021,16,8.4,7.922,7.657,8.203,8.1,0.478,0.3,False
+S1: Demographic Pressures,2023,2022,17,8.5,8.091,7.809,8.363,8.4,0.409,0.1,False
+S2: Refugees and IDPs,2021,2020,15,4.1,5.612,4.732,6.512,4.4,1.512,0.3,False
+S2: Refugees and IDPs,2022,2021,16,3.8,5.348,4.395,6.368,4.1,1.548,0.3,False
+S2: Refugees and IDPs,2023,2022,17,4.1,5.061,4.001,6.155,3.8,0.961,0.3,True
+X1: External Intervention,2021,2020,15,4.5,5.476,5.085,5.885,4.8,0.976,0.3,False
+X1: External Intervention,2022,2021,16,4.2,5.3,4.818,5.737,4.5,1.1,0.3,False
+X1: External Intervention,2023,2022,17,3.9,5.09,4.545,5.629,4.2,1.19,0.3,False

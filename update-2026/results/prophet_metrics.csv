@@ -1,0 +1,14 @@
+series,last_observed,n_backtests,prophet_mae,baseline_mae,nominal_80_coverage
+Total,2024,3,1.399,1.567,0.667
+C1: Security Apparatus,2023,3,1.49,0.302,0.0
+C2: Factionalized Elites,2023,3,0.142,0.0,0.667
+C3: Group Grievance,2023,3,0.32,0.133,0.333
+E1: Economy,2023,3,0.671,0.733,0.333
+E2: Economic Inequality,2023,3,0.319,0.167,0.333
+E3: Human Flight and Brain Drain,2023,3,0.195,0.3,1.0
+P1: State Legitimacy,2023,3,0.141,0.167,1.0
+P2: Public Services,2023,3,0.258,0.467,1.0
+P3: Human Rights,2023,3,0.811,0.167,0.333
+S1: Demographic Pressures,2023,3,0.391,0.233,0.333
+S2: Refugees and IDPs,2023,3,1.34,0.3,0.333
+X1: External Intervention,2023,3,1.089,0.3,0.0

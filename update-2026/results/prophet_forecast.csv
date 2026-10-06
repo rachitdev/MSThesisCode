@@ -1,0 +1,78 @@
+series,year,last_observed,status,prophet,lower_80,upper_80
+Total,2025,2024,unobserved_as_of_snapshot,73.278,71.765,74.948
+Total,2026,2024,unobserved_as_of_snapshot,72.786,71.086,74.508
+Total,2027,2024,future_projection,72.294,70.417,74.045
+Total,2028,2024,future_projection,71.802,69.763,73.615
+Total,2029,2024,future_projection,71.308,69.11,73.631
+C1: Security Apparatus,2024,2023,unobserved_as_of_snapshot,7.256,6.016,8.403
+C1: Security Apparatus,2025,2023,unobserved_as_of_snapshot,7.291,6.154,8.544
+C1: Security Apparatus,2026,2023,unobserved_as_of_snapshot,7.325,6.112,8.448
+C1: Security Apparatus,2027,2023,future_projection,7.359,6.136,8.48
+C1: Security Apparatus,2028,2023,future_projection,7.393,6.231,8.594
+C1: Security Apparatus,2029,2023,future_projection,7.427,6.271,8.62
+C2: Factionalized Elites,2024,2023,unobserved_as_of_snapshot,7.395,7.238,7.559
+C2: Factionalized Elites,2025,2023,unobserved_as_of_snapshot,7.417,7.258,7.572
+C2: Factionalized Elites,2026,2023,unobserved_as_of_snapshot,7.439,7.263,7.606
+C2: Factionalized Elites,2027,2023,future_projection,7.462,7.288,7.632
+C2: Factionalized Elites,2028,2023,future_projection,7.484,7.291,7.677
+C2: Factionalized Elites,2029,2023,future_projection,7.507,7.291,7.727
+C3: Group Grievance,2024,2023,unobserved_as_of_snapshot,8.268,7.996,8.556
+C3: Group Grievance,2025,2023,unobserved_as_of_snapshot,8.274,8.007,8.529
+C3: Group Grievance,2026,2023,unobserved_as_of_snapshot,8.28,7.999,8.544
+C3: Group Grievance,2027,2023,future_projection,8.286,8.002,8.567
+C3: Group Grievance,2028,2023,future_projection,8.293,8.025,8.576
+C3: Group Grievance,2029,2023,future_projection,8.299,7.985,8.594
+E1: Economy,2024,2023,unobserved_as_of_snapshot,6.258,5.734,6.729
+E1: Economy,2025,2023,unobserved_as_of_snapshot,6.344,5.833,6.855
+E1: Economy,2026,2023,unobserved_as_of_snapshot,6.431,5.921,6.919
+E1: Economy,2027,2023,future_projection,6.517,6.028,7.063
+E1: Economy,2028,2023,future_projection,6.603,6.092,7.134
+E1: Economy,2029,2023,future_projection,6.689,6.167,7.208
+E2: Economic Inequality,2024,2023,unobserved_as_of_snapshot,5.442,5.249,5.632
+E2: Economic Inequality,2025,2023,unobserved_as_of_snapshot,5.211,5.001,5.411
+E2: Economic Inequality,2026,2023,unobserved_as_of_snapshot,4.98,4.779,5.208
+E2: Economic Inequality,2027,2023,future_projection,4.749,4.527,4.968
+E2: Economic Inequality,2028,2023,future_projection,4.517,4.27,4.756
+E2: Economic Inequality,2029,2023,future_projection,4.286,4.025,4.562
+E3: Human Flight and Brain Drain,2024,2023,unobserved_as_of_snapshot,5.096,4.591,5.635
+E3: Human Flight and Brain Drain,2025,2023,unobserved_as_of_snapshot,4.999,4.459,5.524
+E3: Human Flight and Brain Drain,2026,2023,unobserved_as_of_snapshot,4.902,4.381,5.442
+E3: Human Flight and Brain Drain,2027,2023,future_projection,4.806,4.255,5.328
+E3: Human Flight and Brain Drain,2028,2023,future_projection,4.709,4.18,5.247
+E3: Human Flight and Brain Drain,2029,2023,future_projection,4.612,4.092,5.116
+P1: State Legitimacy,2024,2023,unobserved_as_of_snapshot,4.261,3.695,4.766
+P1: State Legitimacy,2025,2023,unobserved_as_of_snapshot,4.195,3.678,4.73
+P1: State Legitimacy,2026,2023,unobserved_as_of_snapshot,4.129,3.613,4.629
+P1: State Legitimacy,2027,2023,future_projection,4.063,3.542,4.599
+P1: State Legitimacy,2028,2023,future_projection,3.997,3.508,4.535
+P1: State Legitimacy,2029,2023,future_projection,3.931,3.408,4.448
+P2: Public Services,2024,2023,unobserved_as_of_snapshot,7.374,6.987,7.761
+P2: Public Services,2025,2023,unobserved_as_of_snapshot,7.405,6.992,7.787
+P2: Public Services,2026,2023,unobserved_as_of_snapshot,7.436,7.04,7.814
+P2: Public Services,2027,2023,future_projection,7.467,7.083,7.84
+P2: Public Services,2028,2023,future_projection,7.498,7.118,7.907
+P2: Public Services,2029,2023,future_projection,7.53,7.156,7.928
+P3: Human Rights,2024,2023,unobserved_as_of_snapshot,7.212,6.601,7.849
+P3: Human Rights,2025,2023,unobserved_as_of_snapshot,7.318,6.651,7.967
+P3: Human Rights,2026,2023,unobserved_as_of_snapshot,7.423,6.768,8.081
+P3: Human Rights,2027,2023,future_projection,7.528,6.891,8.17
+P3: Human Rights,2028,2023,future_projection,7.634,6.969,8.223
+P3: Human Rights,2029,2023,future_projection,7.74,7.05,8.393
+S1: Demographic Pressures,2024,2023,unobserved_as_of_snapshot,8.266,7.982,8.555
+S1: Demographic Pressures,2025,2023,unobserved_as_of_snapshot,8.315,7.982,8.636
+S1: Demographic Pressures,2026,2023,unobserved_as_of_snapshot,8.365,8.058,8.669
+S1: Demographic Pressures,2027,2023,future_projection,8.414,8.109,8.715
+S1: Demographic Pressures,2028,2023,future_projection,8.464,8.143,8.775
+S1: Demographic Pressures,2029,2023,future_projection,8.513,8.161,8.85
+S2: Refugees and IDPs,2024,2023,unobserved_as_of_snapshot,4.901,3.889,5.928
+S2: Refugees and IDPs,2025,2023,unobserved_as_of_snapshot,4.936,3.962,5.972
+S2: Refugees and IDPs,2026,2023,unobserved_as_of_snapshot,4.97,3.879,5.944
+S2: Refugees and IDPs,2027,2023,future_projection,5.004,3.936,6.008
+S2: Refugees and IDPs,2028,2023,future_projection,5.038,4.066,6.058
+S2: Refugees and IDPs,2029,2023,future_projection,5.072,4.058,6.092
+X1: External Intervention,2024,2023,unobserved_as_of_snapshot,4.851,4.26,5.493
+X1: External Intervention,2025,2023,unobserved_as_of_snapshot,4.857,4.228,5.51
+X1: External Intervention,2026,2023,unobserved_as_of_snapshot,4.863,4.25,5.483
+X1: External Intervention,2027,2023,future_projection,4.868,4.25,5.477
+X1: External Intervention,2028,2023,future_projection,4.874,4.26,5.512
+X1: External Intervention,2029,2023,future_projection,4.88,4.295,5.452

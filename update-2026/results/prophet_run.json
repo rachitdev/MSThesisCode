@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-10-06",
+  "method": "Prophet 1.4.0 (annual, no seasonality)",
+  "source_data": "data/fsi_2006_2024.csv",
+  "series": 13,
+  "forecast_rows": 77,
+  "backtest_rows": 39,
+  "last_projection_year": 2029
+}

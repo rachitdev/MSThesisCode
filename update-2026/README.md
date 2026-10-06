@@ -1,4 +1,4 @@
-# 2026 research update — Fragile States Index and TimesFM 3.0
+# 2026 research update — Fragile States Index and Prophet projections
 
 **As-of date:** 6 October 2026. **Purpose:** personal, non-commercial research addendum to the 2021 MS thesis, *Predicting Political Instability across the World*. The submitted notebooks, thesis and report have **not** been rewritten; this directory is a separate reproducible update. A Fragile States Index (FSI) score measures multidimensional state fragility, **not** the probability, date, or location of riots or armed conflict. Higher scores indicate greater measured fragility.
 
@@ -21,6 +21,20 @@ python3 -m unittest discover -s update-2026 -p 'test_*.py' -v
 
 For a fresh clone missing the tracked raw files, use `python3 update-2026/build_dataset.py --download-missing`. This uses only the pinned publisher URLs and rejects unexpected bytes, requiring an explicit review of a changed source before acceptance. If the publisher later releases 2024+ full Excel data, replace the manually sourced partial row **only after verifying the year, schema and provenance**, and update the data builder/tests. Do not silently extend a CSV with unverified internet tables.
 
+## Executed Prophet projections and latest report
+
+The submitted thesis notebook `MainCode/Time Series with Facebook's Prophet Library.ipynb` fitted separate Prophet models to India's Total and 12 indicator scores. [`prophet_report.py`](prophet_report.py) reruns that approach against the verified updated panel and **generates actual estimates**: [the dated India projections report](results/prophet_report.md), [all yearly estimates and nominal bounds](results/prophet_forecast.csv), [39 out-of-sample one-year predictions](results/prophet_backtest.csv), and [per-series accuracy summaries](results/prophet_metrics.csv). Total uses observations through **2024** and projections for 2025–2029. The indicator models use observations through **2023** and estimates for 2024–2029. The 2024 indicator estimates, and all 2025/2026 estimates, must **not** be confused with publisher observations. Three expanding-origin holdouts per series compare Prophet against a last-value baseline; several indicators perform **worse** than the baseline. Details, units, source links, limitations and model output are in the report.
+
+Prophet 1.4.0 uses the original notebook's per-series fit and annual year-start future periods, but disables yearly/weekly/daily seasonality: at one observation per year, fitting within-year patterns would be unsupported and Prophet's default yearly setting produced a leap-year aliasing artifact. The notebook's results have not been overwritten. To reproduce from the repository root, install `prophet==1.4.0`, `pandas`, `numpy`, and `openpyxl` in an isolated Python environment, then run:
+
+```bash
+python3 update-2026/build_dataset.py
+python3 update-2026/prophet_report.py
+python3 -m unittest discover -s update-2026 -p 'test_*.py' -v
+```
+
+These projections concern the **FSI score**, not the occurrence or probability of riots, and are exploratory given the 18–19-year annual series. Prophet's nominal 80% bounds are not calibrated confidence intervals.
+
 ## TimesFM 3.0 research experiment
 
 `forecast.py` implements an **India Total** (not riot incidence or twelve-indicator) forecast from the observed 2006–2024 annual series. It calls `timesfm3.mlx.TimesFM3Forecaster.from_pretrained("google/timesfm-3.0-pytorch")`, uses float32 history, evaluates one-step historical holdouts in 2022–2024 against a last-value baseline, and requests five annual steps for **2025–2029**. Results, when run, go to `results/backtest.csv`, `results/forecast.csv`, and `results/summary.json`. It loads the model once, checks output shapes and finite values, and clips predictions/deciles to the publisher's 0–120 score scale. TimesFM's q10/q90 are **model deciles, not validated confidence bounds**; three holdouts do not establish calibration. Compare MAE to the baseline before interpreting a projection.
@@ -34,7 +48,7 @@ conda run -n timesfm python ~/.dsh/skills/timesfm-forecasting/scripts/check_syst
 conda run -n timesfm python update-2026/forecast.py
 ```
 
-The initial model load downloads the checkpoint (roughly 1–2 GB). **Execution status on 6 October 2026:** preflight passed, but the attempted run was blocked when the environment denied writing `~/.cache/huggingface`; **there are no generated model results or measured backtest metrics in this update**. Do not treat the command or model integration as evidence that a forecast was actually produced. No sandbox workaround or unverified forecast was used.
+The initial model load downloads the checkpoint (roughly 1–2 GB). **Execution status on 6 October 2026:** preflight passed, but the attempted run was blocked when the environment denied writing `~/.cache/huggingface`; **there are no generated TimesFM results or TimesFM backtest metrics in this update**. The published estimates and measured backtests in `results/` were generated with **Prophet**, not TimesFM. Do not treat the TimesFM command or model integration as evidence that a TimesFM forecast was produced. No sandbox workaround or unverified forecast was used.
 
 ## Reproducibility and interpretation
 
@@ -43,6 +57,7 @@ The initial model load downloads the checkpoint (roughly 1–2 GB). **Execution 
 | Original thesis workbooks | 2020 | Annual country Total + 12 indicators | Historical copy, not retroactively edited |
 | Publisher Excel workbooks | 2023 | Annual country Total + 12 indicators | None published in Excel for 2024 on the checked page |
 | Publisher 2024 report | 2024 | India Total/rank only | No transcribed indicator rows |
+| Prophet output | 2025–2029 Total; 2024–2029 indicators | Executed India-only, separate per-series annual projections | Model estimates, not published observations; inspect backtest baseline |
 | TimesFM output | Not generated in this environment | Proposed India Total forecast, 2025–2029 | First checkpoint load blocked by filesystem policy |
 
 A score trend is an index projection, not a causal analysis or a political-instability warning system. The original riot-list extraction and clustering notebooks are historical artifacts and have not been re-run or claimed to be updated here. Data availability, name changes, different country counts in early years, index methodology, and the unusually short series constrain any comparison across years.

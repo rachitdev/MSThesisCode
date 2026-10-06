@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 update-2026/data/test_gap.csv
+update-2026/.venv/
+update-2026/.cache/
